@@ -1,4 +1,3 @@
-//import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -9,7 +8,19 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import Home from "./component/home.jsx";
+import { Home } from "./component/home.js";
+import { SecondsCounter } from "./component/SecondsCounter";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+const start = Date.now();
+
+setInterval(() => {
+	const millis = Date.now() - start;
+
+	let seconds = Math.floor(millis / 1000);
+
+	ReactDOM.render(
+		<SecondsCounter seconds={seconds} />,
+		document.querySelector("#app")
+	);
+}, 1000);

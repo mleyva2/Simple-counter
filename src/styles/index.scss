@@ -1,5 +1,41 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+.container {
+    display: flex;
+    // justify-content: center;
+
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: rgb(1, 1, 70);
+    width: 100px;
+    height: 150px;
+    border-color: rgb(1, 1, 70);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    justify-content: center;
+    
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    font-size: 75px;
+    align-items: center;
+}
+
+.row {
+    background: rgb(1, 1, 70);
+    justify-content: center;
+    
+}
+
 /* 
 
     You can write your own styles here...
@@ -10,4 +46,13 @@
     
     import 'relative/path/to/stylesheet.scss';
 
+    .blackCard{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+}
+
 */
+
